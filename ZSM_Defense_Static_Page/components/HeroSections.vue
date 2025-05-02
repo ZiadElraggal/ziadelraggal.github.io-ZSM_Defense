@@ -113,12 +113,12 @@ import { ref } from 'vue'
 const isPlaying = ref(true)
 const showModal = ref(false)
 const pauseIcon = ref(false)
-let videoEl
+const videoEl = ref(null)
 
 const togglePlay = () => {
   if (!videoEl) return
   isPlaying.value = !isPlaying.value
-  isPlaying.value ? videoEl.play() : videoEl.pause()
+  isPlaying.value ? videoEl.value.play() : videoEl.value.pause()
 }
 
 // handle download button click dependant on platform
