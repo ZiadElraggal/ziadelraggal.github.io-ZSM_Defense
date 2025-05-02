@@ -10,7 +10,7 @@
       playsinline
       class="absolute top-0 left-0 w-full h-full object-cover object-center z-0"
     >
-      <source src="../assets/Videos/ZSM_Defense_Official_Trailer.mp4" type="video/mp4" />
+      <source src="/videos/ZSM_Defense_Official_Trailer.mp4" type="video/mp4" />
     </video>
 
     <!-- Pause/Play Button (Top Left) -->
@@ -55,7 +55,7 @@
       <!-- CTA Button -->
       <a
         @click.prevent="handleDownload"
-        class="mt-1 ml-8 text-sm sm:text-base md:text-lg sm:ml-10 hover:scale-110 transition-all font-semibold"
+        class="mt-1 ml-8 text-sm sm:text-base md:text-lg lg:ml-[80px] md:ml-12 sm:ml-10 hover:scale-110 transition-all font-semibold"
       >
       <img
           src="~/assets/images/play_now.png"
@@ -90,7 +90,7 @@
     >
       <div class="relative w-[90vw] max-w-4xl">
         <video controls autoplay class="w-full rounded shadow-lg">
-          <source src="../assets/Videos/ZSM_Defense_Official_Trailer.mp4" type="video/mp4" />
+          <source src="/videos/ZSM_Defense_Official_Trailer.mp4" type="video/mp4" />
         </video>
         <UButton
           @click="showModal = false"
